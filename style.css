@@ -1,0 +1,155 @@
+*{
+    
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+body{
+    background-image: url(imagenes/stacked-waves.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    padding-top: 10px;
+    margin-left: 05px;
+    width: 11%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area{
+    background: #F3F5FC;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871 ;
+    margin-top: 90px;
+    text-transform: lowercase;
+    padding-left: 20px;
+    padding-top: 20px;
+    
+}
+
+::placeholder{ color: #214674;}
+
+.text-area:focus{
+    outline: none;
+}
+
+.mensaje{
+    background: white;
+    background-image: url(imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    height: 657px;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.bencriptar{
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #F3F5FC;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    transition: all 0.25s ease;
+    
+    &:hover {
+        border: none;
+        transform: scale(1.02)
+    }
+    &:active {
+        letter-spacing: 2px ;
+    }
+    
+}
+.bencriptar.clicked {
+    background: #47d3a7;
+    border: none;
+}
+
+.bencriptar.clicked::after {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.bdesencriptar{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 20px;
+    transition: all 0.25s ease;
+    &:hover {
+        border: none;
+        transform: scale(1.02)
+    }
+    &:active {
+        letter-spacing: 2px ;
+    }
+    
+}
+.bdesencriptar.clicked {
+    background: #e6f05c;
+    border: none;
+}
+
+.bdesencriptar.clicked::after {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.bcopiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-left: 130px;
+    position: absolute;
+    transition: all 0.25s ease;
+    &:hover {
+        background: #777777;
+        color: #D8DFE8;
+        border: none;
+        transform: scale(1.02)
+    }
+    &:active {
+        letter-spacing: 2px ;
+    }
+}
+
+.informacion {
+    color: #242323;
+    font-size: 18px;
+}
+.copyright{
+    color: #242323;
+    font-size: 15px;
+    text-align: center;
+}
